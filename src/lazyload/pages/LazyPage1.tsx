@@ -1,9 +1,9 @@
 
 
-export const LazyPag1 = () => {
+export const LazyPage1 = () => {
   return (
-    <div>LazyPag1</div>
+    <div>LazyPage1</div>
   )
 }
 
-export default LazyPag1
+export default LazyPage1
