@@ -1,3 +1,3 @@
 export * from './ProductTitle'
-export * from './ProductImage'
-export * from './ProductButtons'
+export {ProductImage} from './ProductImage'
+export {ProductButtons} from './ProductButtons'

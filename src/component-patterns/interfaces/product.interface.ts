@@ -22,3 +22,8 @@ export interface ProductCardHOCProps {
   Image: (Props: PropsImage) => JSX.Element;
   Buttons: (Props: PropsButtons) => JSX.Element;
 }
+
+export interface onChageArgs {
+  product: Product;
+  count: number
+}

@@ -3,7 +3,7 @@ import { createContext, ReactElement } from "react";
 
 import { useProduct } from "../hooks";
 
-import { Product,ProductContextProps } from '../interfaces/product.interface'
+import { onChageArgs, Product,ProductContextProps } from '../interfaces/product.interface'
 import styles from "../styles/styles.module.css";
 
 export const productContext = createContext({} as ProductContextProps);
@@ -15,11 +15,20 @@ export interface Props {
   children?:ReactElement | ReactElement[];
   className?: string;
   style?: React.CSSProperties;
+  onChange?: (args: onChageArgs) => void;
+  value?: number;
 }
 
-export const ProductCard = ({children, product, className, style}: Props) => {
+export const ProductCard = ({
+  children,
+  product,
+  className,
+  style,
+  onChange,
+  value
+}: Props) => {
 
-  const {counter, increaseBy} = useProduct();
+  const {counter, increaseBy} = useProduct({ onChange, product, value } );
 
   return (
     <Provider value={{
