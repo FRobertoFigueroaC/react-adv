@@ -18,6 +18,8 @@ button {
 
 span, .error-message {
     color: red;
+    margin: 10px 0 10px 0;
+    font-style: italic;
 }
 
 .has-error {

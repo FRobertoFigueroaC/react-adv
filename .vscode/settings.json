@@ -1,0 +1,8 @@
+{
+  "testing.showCoverageInExplorer": true,
+  "testing.saveBeforeTest": true,
+  "testing.gutterEnabled": true,
+  "testing.showAllMessages": true,
+  "testing.automaticallyOpenPeekView": "never",
+  "testing.openTesting": "neverOpen"
+}
