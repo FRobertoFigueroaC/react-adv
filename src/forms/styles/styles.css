@@ -8,20 +8,48 @@ input, select {
     margin-top: 5px;
     outline: none;
     padding: 10px;
+    border-radius: 10px;
 }
 
-
-button {
+button{
     margin-top: 20px;
     padding: 10px;
+    border-radius: 20px;
+}
+button[type="submit"] {
+    background-color: rgb(68, 180, 68);
+    border: 1px solid green;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0px 8px 15px rgba(228, 225, 225, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    text-transform: uppercase;
+    outline: none;
+}
+
+button[type="submit"]:hover {
+    background-color: rgb(23, 201, 23);
+    box-shadow: 0px 15px 20px rgba(228, 225, 225, 0.903);
+    color: white;
+    transform: translateY(-2px);
 }
 
 span, .error-message {
+    font-weight:400;
     color: red;
-    margin: 10px 0 10px 0;
+    margin: 5px;
+    padding: 5px;
     font-style: italic;
+    /* background-color: rgba(255, 255, 255, 0.918); */
+    border: 1px solid rgba(255, 255, 255, 0.918);
+    border-radius: 5px 5px;
 }
 
 .has-error {
     border: 1px solid red;
+}
+
+.check-label {
+    margin-top: 10px;
 }

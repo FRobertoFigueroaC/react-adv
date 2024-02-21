@@ -1,5 +1,5 @@
 
-// import '../styles/styles.css'
+import '../styles/styles.css'
 import { useForm } from '../hooks/useForm'
 
 export const RegisterPage = () => {
