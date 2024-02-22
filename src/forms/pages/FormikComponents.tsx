@@ -23,7 +23,7 @@ export const FormikComponents = () => {
             terms: false,
             jobType: '',
           }}
-          onSubmit={ (values) => {
+          onSubmit={ (values: FormValues) => {
             console.log(values)
           }}
           validationSchema={

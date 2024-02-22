@@ -49,7 +49,7 @@ export const RegisterPage = () => {
                 onChange={onChange}
                 className={`${password2.trim().length <= 0 && 'has-error'}`}/>
         {password2.trim().length <= 0 && <span>This field is required</span>}
-        {password2 != password1 && <span>The password is not the same</span>}
+        {password2 !== password1 && <span>The password is not the same</span>}
         <button type="submit">
           Submit
         </button>

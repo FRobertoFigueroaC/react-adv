@@ -78,7 +78,7 @@ export const FormikBasicPage = () => {
         {touched.email && errors.email && <span>{errors.email}</span>}
 
 
-        { Object.keys(touched).length > 0 && Object.keys(errors).length == 0 &&
+        { Object.keys(touched).length > 0 && Object.keys(errors).length === 0 &&
           <button type="submit">
             Submit
           </button>

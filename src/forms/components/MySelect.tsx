@@ -7,10 +7,10 @@ interface Props {
   [x:string]: string;
 }
 
-interface Option {
-  key: string;
-  value: string;
-}
+// interface Option {
+//   key: string;
+//   value: string;
+// }
 
 export const MySelect = ({
   label,
@@ -18,7 +18,7 @@ export const MySelect = ({
   ...props
 }: Props) => {
 
-  const [field, meta] = useField(props);
+  const [field] = useField(props);
 
   return (
     <>

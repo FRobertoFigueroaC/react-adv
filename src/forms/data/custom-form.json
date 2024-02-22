@@ -1,0 +1,63 @@
+[
+  {
+    "type": "text",
+    "name": "firstName",
+    "placeholder": "Roberto",
+    "label": "First Name",
+    "value": "",
+    "validations": [
+      {
+        "type": "required",
+        "message": "First Name is required"
+      },
+      {
+        "type": "minLength",
+        "value": 5,
+        "message": "First Name must be at least 5 characters"
+      }
+    ]
+  },
+  {
+    "type": "text",
+    "name": "lastName",
+    "placeholder": "Figueroa",
+    "label": "Last Name",
+    "value": "",
+    "validations": [
+      {
+        "type": "minLength",
+        "value": 5,
+        "message": "Last Name must be at least 5 characters"
+      }
+    ]
+  },
+  {
+    "type": "email",
+    "name": "email",
+    "placeholder": "smth@smth.com",
+    "label": "Email",
+    "value": "",
+    "validations": [
+      {
+        "type": "required",
+        "message": "Email is required"
+      },
+      {
+        "type": "email",
+        "message": "Invalid format"
+      }
+    ]
+  },
+  {
+    "type": "select",
+    "name": "jobType",
+    "label": "Rol",
+    "value": "0",
+    "options": [
+      { "id": "1", "value":"Frontend Developer"},
+      { "id": "2", "value":"Backend Developer"},
+      { "id": "3", "value":"Project Manager"},
+      { "id": "4", "value":"QA Tester"}
+    ]
+  }
+]

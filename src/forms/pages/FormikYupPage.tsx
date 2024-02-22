@@ -1,5 +1,5 @@
 
-import { useFormik, FormikErrors } from "formik";
+import { useFormik } from "formik";
 import * as Yup from "yup";
 import '../styles/styles.css'
 
@@ -57,7 +57,7 @@ export const FormikYup = () => {
         {touched.email && errors.email && <span>{errors.email}</span>}
 
 
-        { Object.keys(touched).length > 0 && Object.keys(errors).length == 0 &&
+        { Object.keys(touched).length > 0 && Object.keys(errors).length === 0 &&
           <button type="submit">
             Submit
           </button>
